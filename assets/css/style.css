@@ -1,0 +1,247 @@
+*,
+p,
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+section,
+main,
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  background: #202342;
+  color: #ffffff;
+}
+
+.box-card {
+  background: #242949;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #f74e65;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.paragraph {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-section {
+  margin: 5rem 0;
+}
+.header-section .profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-section .profile-card .name {
+  color: #f74e65;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.header-section .profile-card .title {
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.header-section .profile-card img {
+  width: 100%;
+  max-width: 17rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.header-section .about-card .contact-profile ul li {
+  list-style-type: none;
+}
+.header-section .about-card .contact-profile ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.header-section .about-card .contact-profile ul li a .contact-icon {
+  background: #f74e65;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.social-section {
+  margin-bottom: 5rem;
+}
+.social-section .container {
+  text-align: center;
+}
+.social-section .container .subtitle {
+  margin-bottom: 2rem;
+}
+.social-section .container ul {
+  display: flex;
+  justify-content: space-around;
+}
+.social-section .container ul li {
+  display: inline-block;
+}
+.social-section .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.social-section .container ul li a img {
+  width: 100%;
+  max-width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.education-section {
+  margin-bottom: 5rem;
+}
+.education-section .container .education {
+  color: #ffffff;
+}
+.education-section .container .education .degree-name,
+.education-section .container .exprience .degree-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.education-section .container .education .uni-name,
+.education-section .container .exprience .uni-name {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+.education-section .container .education .education-details,
+.education-section .container .exprience .education-details {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.education-section .container ul li {
+  list-style-type: none;
+}
+.education-section .container ul li:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+
+.skill-section {
+  margin-bottom: 5rem;
+}
+.skill-section .container .skills {
+  color: #ffffff;
+}
+.skill-section .container .skills .progress-section .progress {
+  margin-bottom: 0.5rem;
+}
+.skill-section .container .skills .progress-section .progress-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.skill-section .container .skills .progress-section .progress-bar {
+  background: #f74e65;
+}
+.skill-section .container .certificates .degree-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.skill-section .container .certificates .uni-name {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+.skill-section .container .certificates .education-details {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.skill-section .container .certificates ul li {
+  list-style-type: none;
+}
+.skill-section .container .certificates ul li:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+
+.language-section {
+  margin-bottom: 5rem;
+}
+.language-section .language ul {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.language-section .language ul li {
+  list-style-type: none;
+  font-size: 1rem;
+}
+.language-section .hobbies ul {
+  display: flex;
+  justify-content: space-around;
+}
+.language-section .hobbies ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: center;
+}
+.language-section .hobbies ul li .hobby-icon {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-section,
+  .education-section,
+  .skill-section {
+    margin-bottom: 0;
+  }
+  .social-section .container ul li a img {
+    width: 70%;
+  }
+  .social-section {
+    margin-bottom: 0.5rem;
+  }
+  .header-section .row > *,
+  education-section {
+    padding: 0;
+  }
+  .language-section {
+    margin-bottom: 1rem;
+  }
+  .header-section {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

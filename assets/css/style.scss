@@ -1,0 +1,273 @@
+// Variables
+$color1: #202342;
+$color2: #242949;
+$color3: #f74e65;
+$color4: #ffffff;
+
+// Base Styles
+*,
+p,
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+section,
+main,
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  background: $color1;
+  color: #ffffff;
+}
+
+.box-card {
+  background: $color2;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: $color3;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.paragraph {
+  color: $color4;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.header-section {
+  margin: 5rem 0;
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .name {
+      color: $color3;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      font-weight: 300;
+      color: $color4;
+      line-height: 2rem;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+    img {
+      width: 100%;
+      max-width: 17rem;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .about-card {
+    .contact-profile {
+      ul {
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: $color4;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+            display: block;
+            .contact-icon {
+              background: $color3;
+              display: inline-flex;
+              width: 1.8rem;
+              height: 1.8rem;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.social-section {
+  margin-bottom: 5rem;
+  .container {
+    text-align: center;
+    .subtitle {
+      margin-bottom: 2rem;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        display: inline-block;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: $color4;
+          font-size: 1rem;
+          font-weight: 300;
+          img {
+            width: 100%;
+            max-width: 5rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.education-section {
+  margin-bottom: 5rem;
+  .container {
+    .education {
+      color: #ffffff;
+    }
+    .education,
+    .exprience {
+      .degree-name {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .uni-name {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+      }
+      .education-details {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+    ul {
+      li {
+        list-style-type: none;
+      }
+      li:nth-child(1) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.skill-section {
+  margin-bottom: 5rem;
+  .container {
+    .skills {
+      color: $color4;
+      .progress-section {
+        .progress {
+          margin-bottom: 0.5rem;
+        }
+        .progress-title {
+          margin-bottom: 1rem;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+        .progress-bar {
+          background: $color3;
+        }
+      }
+    }
+    .certificates {
+      .degree-name {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .uni-name {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+      }
+      .education-details {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      ul {
+        li {
+          list-style-type: none;
+        }
+        li:nth-child(1) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.language-section {
+  margin-bottom: 5rem;
+  .language {
+    ul {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      li {
+        list-style-type: none;
+        font-size: 1rem;
+      }
+    }
+  }
+  .hobbies {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style-type: none;
+        font-size: 1rem;
+        text-align: center;
+        .hobby-icon {
+          display: block;
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-section,
+  .education-section,
+  .skill-section {
+    margin-bottom: 0;
+  }
+  .social-section .container ul li a img {
+    width: 70%;
+  }
+  .social-section {
+    margin-bottom: 0.5rem;
+  }
+  .header-section .row > *,
+  education-section {
+    padding: 0;
+  }
+  .language-section {
+    margin-bottom: 1rem;
+  }
+  .header-section {
+    margin-top: 1rem;
+  }
+}
